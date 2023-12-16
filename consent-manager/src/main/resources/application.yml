@@ -1,0 +1,20 @@
+server:
+  port: 9002
+credentials:
+  username: consent-manager-service
+  password: consent-manager@1234
+spring:
+  application:
+    name: consent-manager-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/consent-db
+    username: root
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+eureka:
+  client:
+    enabled: false

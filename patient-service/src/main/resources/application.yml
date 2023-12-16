@@ -1,0 +1,24 @@
+credentials:
+  service-name: patient-service
+  password: 123
+  id: patient123
+hospital-manager:
+  address: "http://localhost:9001/"
+server:
+  port: 9003
+
+spring:
+  application:
+    name: patient-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/patients
+    username: root
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+

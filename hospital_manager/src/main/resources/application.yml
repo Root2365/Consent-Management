@@ -1,0 +1,23 @@
+credentials:
+  service-name: hospital-manager-service
+  password: 456
+server:
+  port: 9001
+spring:
+  application:
+    name: hospital-manager-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/hospital-manager
+    username: root
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+eureka:
+  client:
+    enabled: false
